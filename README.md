@@ -1,8 +1,10 @@
 # Room Reconstruction with Color Map Optimization
 [Report](link) | [Video](https://youtube.com/playlist?list=PLUffCQyBEYtbOQg4-66ZrcuNmsX0OXVKv)
+Based on Open3d, we implement the traditional reconstruction pipelne(point cloud + mesh), and use Color Map Optimization to draw clear textures on mesh.
 ![](https://github.com/Ribosome-rbx/Color_Map_Optimization/blob/main/resource/cmo_pipeline.png)
 
 ## Environment
+All the dependencies used in this repo are listed as below:
 * Open3d 0.16.0
 * Opencv 4.7.0
 * Sklearn 1.2.2
@@ -35,7 +37,18 @@ We have a well reconstructed room mesh(.obj) in `./resource`. To visulize it, us
 ```
 cd ./Color_Map_Optimization && python ./Visualization_rotate.py
 ```
-To reconstruct the room from stratch, please download aforementioned dataset, and run:
+To reconstruct the room from scatch, please download aforementioned dataset, and run:
 ```
 python ./color_map_optimization.py
 ```
+## Illustration of each file
+* **color_map_optimization.py:** main implementation. Including dataloader, aligning RGB and depth images, point_cloud and mesh reconstruction, and color map optimization.
+* **filter_blurry_images.py:** select blurry images from the mixture of clear and blurry images.
+* **llff_convertion.py:** generate poses_bounds_inv.npy for NeRF-based methods.
+* **mesh2rgb.py:** input camera poses to render rgb images with pre-built models.
+* **metrices_compute.py:** run evaluation metrices to output images of NeRF-based methods.
+* **pcd_stitching.py:** use ICP for point cloud stitching
+* **pcd2mesh.py:** implement poisson surface reconstruction to recover mesh from point clouds
+* **pcd2rgb.py:** input camera poses to render rgb images with pre-built point clouds.
+* **Visualization_rotate.py** visualize (point cloud/mesh)files in a rotating form.
+* **visualization.py** dependencies for visualization.
