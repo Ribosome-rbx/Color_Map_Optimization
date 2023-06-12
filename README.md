@@ -1,6 +1,6 @@
 # Room Reconstruction with Color Map Optimization
 [Report](link) | [Video](https://youtube.com/playlist?list=PLUffCQyBEYtbOQg4-66ZrcuNmsX0OXVKv)
-![](https://github.com/Ribosome-rbx/Color_Map_Optimization/tree/main/resource/cmo_pipeline.png)
+![](https://github.com/Ribosome-rbx/Color_Map_Optimization/blob/main/resource/cmo_pipeline.png)
 
 ## Environment
 * Open3d 0.16.0
@@ -29,7 +29,7 @@ Directory Structure
 ```
 
 ## Run
-![](https://github.com/Ribosome-rbx/Color_Map_Optimization/tree/main/resource/AnnaRoom.gif)
+![](https://github.com/Ribosome-rbx/Color_Map_Optimization/blob/main/resource/AnnaRoom.gif)
 
 We have a well reconstructed room mesh(.obj) in `./resource`. To visulize it, use:
 ```
