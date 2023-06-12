@@ -1,6 +1,7 @@
 # Room Reconstruction with Color Map Optimization
 [Report](link) | [Video](https://youtube.com/playlist?list=PLUffCQyBEYtbOQg4-66ZrcuNmsX0OXVKv)
-Based on Open3d, we implement the traditional reconstruction pipelne(point cloud + mesh), and use Color Map Optimization to draw clear textures on mesh.
+
+We implement the traditional reconstruction pipelne(point cloud + mesh), and use Color Map Optimization to draw clear textures on mesh.
 ![](https://github.com/Ribosome-rbx/Color_Map_Optimization/blob/main/resource/cmo_pipeline.png)
 
 ## Environment
