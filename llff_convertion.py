@@ -2,7 +2,6 @@ import numpy as np
 import glob
 from os.path import join
 import cv2
-from scipy.spatial.transform import Rotation
 
 def convert(rgb_dir, depth_dir, intrinsics_path, extrinsics_path, save_dir, testing_hold=5, depth_start=0):
 
