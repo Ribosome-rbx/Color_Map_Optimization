@@ -41,7 +41,7 @@ def convert(rgb_dir, depth_dir, intrinsics_path, extrinsics_path, save_dir, test
 
     # breakpoint()
     print("saving poses_bounds......")
-    np.save(join(save_dir, "poses_bounds_inv.npy"), np.array(poses_bounds))
+    np.save(join(save_dir, "poses_bounds.npy"), np.array(poses_bounds))
     print("finished")
 
 if __name__ == "__main__":

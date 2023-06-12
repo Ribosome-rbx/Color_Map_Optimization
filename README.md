@@ -45,7 +45,7 @@ python ./color_map_optimization.py
 ## Illustration of each file
 * **color_map_optimization.py:** main implementation. Including dataloader, aligning RGB and depth images, point_cloud and mesh reconstruction, and color map optimization.
 * **filter_blurry_images.py:** select blurry images from the mixture of clear and blurry images.
-* **llff_convertion.py:** generate poses_bounds_inv.npy for NeRF-based methods.
+* **llff_convertion.py:** generate poses_bounds.npy for NeRF-based methods.
 * **mesh2rgb.py:** input camera poses to render rgb images with pre-built models.
 * **metrices_compute.py:** run evaluation metrices to output images of NeRF-based methods.
 * **pcd_stitching.py:** use ICP for point cloud stitching
